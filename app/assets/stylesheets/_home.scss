@@ -1,0 +1,113 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+
+.contents__header {
+  height: 80px;
+  width: 100%;
+  background-color:#00FFFF;
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    font-size: 25px;
+    line-height: 80px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__btn {
+    line-height: 80px;
+    margin-right: 100px;
+    list-style: none;
+    display: flex;
+    color: black;
+
+    &__a {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    &__b {
+      text-decoration: none;
+    }
+  } 
+}
+
+.container_top {
+  text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3FaFHYH9NkyNIcfgV3CJAbyn7WuKRAKJf61WtJIfIDSWyd097");
+  background-size: cover;
+
+  &__info {
+    height: 800px;
+    padding-top: 150px;
+    color: white;
+    font-size: 55px;
+    letter-spacing: 5px;
+    opacity: 0.9;
+
+    h3 {
+      font-size: 55px;
+      margin-top: 50px;
+    }
+
+    p {
+      margin-top: 50px;
+      font-size: 30px;
+      letter-spacing: 0;
+
+    }
+  }
+  .container_top__btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    
+    .container-btn {
+      padding: 0 30px;
+      display: block;
+      color: white;
+      border-radius: 10px;
+    }
+
+    &_user {
+      background-color: #00FF00;
+      cursor: pointer;
+      box-shadow: 0 7px #1a7940;
+      
+    }
+    &_facebook {
+      background-color:#4169e1;
+      cursor: pointer;
+      box-shadow: 0 7px #000080;
+    }
+    &_twitter {
+      background-color: #00bfff;
+      cursor: pointer;
+      box-shadow: 0 7px #0099FF;  
+    }
+  }
+}
+
+.container_middle {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  &_info {
+    height: 300px;
+
+    p {
+      margin: 25px 0;
+    }
+  }  
+}
+
+
