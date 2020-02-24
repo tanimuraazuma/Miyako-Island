@@ -48,13 +48,9 @@
     border: double 10px black;
     text-align: center;
 
-    &__name {
-      font-size: 25px;
-      margin-bottom: 15px;
-      border: double 10px black;
-    }
     &__text {
       margin-bottom: 15px;
+      width: 100%;
     }
     
   }

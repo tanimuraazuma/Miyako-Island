@@ -1,0 +1,14 @@
+.tweet-header
+  = link_to "#", class: "tweet-header__name" do
+    = icon('fas', 'swimmer')
+    宮古島
+  %ul.tweet-header__btn
+    %li= link_to "新規投稿", "#", class: "tweet-header__btn__a" 
+    %li= link_to "ログアウト", "#", class: "tweet-header__btn__b" 
+.tweets
+  .tweet
+    = form_with model: @tweet do |form|
+      = form.text_area :content, class: "tweet__text"
+      
+      
+    
