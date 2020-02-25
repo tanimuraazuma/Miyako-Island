@@ -1,11 +1,12 @@
 .contents
   .contents__header
-    = link_to "#", class: "contents__header__name" do
+    = link_to tweets_path, class: "contents__header__name" do
       = icon('fas', 'swimmer')
       宮古島
     %ul.contents__header__btn
-      %li= link_to "新規登録", "#", class: "contents__header__btn__a" 
-      %li= link_to "ログイン", "#", class: "contents__header__btn__b" 
+      %li= link_to current_user.name, "#"
+      %li= link_to "新規登録", new_user_registration_path, class: "contents__header__btn__a" 
+      %li= link_to "ログイン", new_user_session_path, class: "contents__header__btn__b" 
   .container_top
     .container_top__info
       %hi Let's have a good time 
@@ -14,7 +15,7 @@
       %h3 ~一生に一度の思い出を~
       %p Do you wanna join us?
     .container_top__btn
-      = link_to "#", class: "container-btn container_top__btn_user" do
+      = link_to new_user_registration_path, class: "container-btn container_top__btn_user" do
         = icon('fas', 'user')
         新規登録
       = link_to "#", class: "container-btn container_top__btn_facebook" do

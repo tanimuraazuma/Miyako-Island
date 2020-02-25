@@ -8,8 +8,6 @@
 .tweets
   .tweet
     = form_with model: @tweet do |form|
-      = form.text_area :content, class: "tweet__text", placeholder: "今どんな気持ち？"
+      = form.text_area :content, class: "tweet__text", placeholder: "#{@tweet.content}"
       = form.file_field :image, class: "tweet__image"
-      = form.submit "送信"
-
-      
+      = form.submit "保存"
