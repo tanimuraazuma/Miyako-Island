@@ -1,0 +1,72 @@
+// Place all the styles related to the shops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+
+.shops-header {
+  height: 80px;
+  width: 100%;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    font-size: 25px;
+    line-height: 80px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__btn {
+    width: 50%;
+    margin-right: 100px;
+
+    &__ul {
+      line-height: 80px;
+      margin-right: 100px;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+
+      &__diving {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      }
+
+      &__food {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+
+      }
+
+      &__star {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      }
+    }
+  }
+}
+
+.shops-main {
+  padding-top: 50px;
+  text-align: center;
+
+  &__box {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .shops-main__box__info {
+    width: 300px;
+
+  }
+
+}

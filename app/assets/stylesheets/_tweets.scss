@@ -28,6 +28,16 @@
     display: flex;
     color: black;
 
+    &__shops {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    &__name {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
     &__a {
       margin-right: 20px;
       text-decoration: none;
