@@ -3,10 +3,15 @@
     = link_to tweets_path, class: "contents__header__name" do
       = icon('fas', 'swimmer')
       宮古島
-    %ul.contents__header__btn
-      %li= link_to current_user.name, "#"
-      %li= link_to "新規登録", new_user_registration_path, class: "contents__header__btn__a" 
-      %li= link_to "ログイン", new_user_session_path, class: "contents__header__btn__b" 
+    - if user_signed_in?
+      %ul.tweet-header__btn
+        %li= link_to current_user.name, user_path(current_user.id), class: "contents__header__btn__name"
+        %li= link_to "新規投稿", new_tweet_path, class: "tweet-header__btn__a" 
+        %li= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "tweet-header__btn__b" 
+    - else
+      %ul.contents__header__btn
+        %li= link_to "新規登録", new_user_registration_path, class: "contents__header__btn__a" 
+        %li= link_to "ログイン", new_user_session_path, class: "contents__header__btn__b" 
   .container_top
     .container_top__info
       %hi Let's have a good time 
