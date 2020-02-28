@@ -32,31 +32,44 @@
       list-style: none;
       justify-content: space-between;
 
-      &__diving {
-      text-decoration: none;
-      color: black;
-      font-size: 25px;
+      &__li {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
       }
-
-      &__food {
-      text-decoration: none;
-      color: black;
-      font-size: 25px;
-
-      }
-
-      &__star {
-      text-decoration: none;
-      color: black;
-      font-size: 25px;
-      }
+      
     }
   }
 }
 
+.shops_info {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  
+}
+.shops_info__btn__a {
+  text-decoration: none;
+  margin: 25px 0;
+  display: inline-block;
+}
+
+  
+
+.delete {
+  display: none;
+}
+
+
+
 .shops-main {
   padding-top: 50px;
   text-align: center;
+  z-index: 1;
 
   &__box {
     padding-top: 50px;

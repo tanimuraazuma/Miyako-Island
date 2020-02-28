@@ -31,19 +31,23 @@
     &__shops {
       margin-right: 20px;
       text-decoration: none;
+      color: black;
     }
 
     &__name {
       margin-right: 20px;
       text-decoration: none;
+      color: black;
     }
 
     &__a {
       margin-right: 20px;
       text-decoration: none;
+      color: black;
     }
     &__b {
       text-decoration: none;
+      color: black;
     }
   }
 }
@@ -62,6 +66,10 @@
       font-size: 25px;
       margin-bottom: 15px;
       border: double 10px black;
+      &__user {
+        text-decoration: none;
+        color: black;
+      }
     }
     &__text {
       margin-bottom: 15px;

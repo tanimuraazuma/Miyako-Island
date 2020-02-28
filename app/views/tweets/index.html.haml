@@ -4,6 +4,7 @@
     宮古島
   - if user_signed_in?
     %ul.tweet-header__btn
+      %li= link_to "店舗一覧", shops_path, class: "tweet-header__btn__shops"
       %li= link_to current_user.name, user_path(current_user.id), class: "tweet-header__btn__name"
       %li= link_to "新規投稿", new_tweet_path, class: "tweet-header__btn__a" 
       %li= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "tweet-header__btn__b" 
@@ -15,7 +16,7 @@
   - @tweets.each do |tweet|
     .tweet
       .tweet__name
-        = tweet.user.name
+        = link_to tweet.user.name, user_path(tweet.user_id), class: "tweet__name__user"
       .tweet__text
         = tweet.content
       .tweet__img
