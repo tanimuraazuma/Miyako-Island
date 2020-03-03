@@ -6,7 +6,7 @@
     %li= link_to "新規投稿", new_tweet_path, class: "tweet-header__btn__a" 
     %li= link_to "ログアウト", destroy_user_session_path, class: "tweet-header__btn__b" 
 .tweets
-  .tweet
+  .tweet__show
     .tweet__name
       = @tweet.user.name
     .tweet__text
@@ -18,3 +18,15 @@
       - if user_signed_in? && current_user.id == @tweet.user_id
         = link_to "編集", edit_tweet_path(@tweet.id), class: "tweet__some__btn"
         = link_to "削除", "/tweets/#{@tweet.id}", method: :delete, class: "tweet__some__btn"
+    .tweet__form    
+      - if user_signed_in?  
+        = form_with model: [@tweet, @comment], local: true do |form|
+          = form.text_area :text, class: "comment_area", placeholder: "コメントする", rows: "2"
+          = form.submit "送信", class: "submit"
+    - if @comments
+      %hi コメント一覧     
+      .comments      
+        = @comments.each do |comment|
+          .comment
+            = comment.user.name
+            = comment.text

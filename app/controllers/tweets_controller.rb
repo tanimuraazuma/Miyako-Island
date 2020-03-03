@@ -15,15 +15,19 @@ class TweetsController < ApplicationController
     redirect_to action: :index
   end
 
-  def show  
+  def show
+    @comment = Comment.new
+    @comments = @tweet.comments.includes(:user)
   end
 
   def edit
+    
   end
 
   def update
     tweet = Tweet.find(params[:id])
     tweet.update(tweet_params)
+    redirect_to action: :index
   end
 
   def destroy
