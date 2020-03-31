@@ -13,7 +13,7 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
+  z-index: 1;
   display: none;
 
   &__info {
@@ -69,53 +69,75 @@
 
 .shops__info { 
   text-align: center;
-  padding: 100px 200px;
+  padding: 100px 350px;
+  background-color: azure;
+  &__content {
+    background-color: white;
+    padding-top: 20px;
+    &__name {
+      letter-spacing: 5px;
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      width: 300px;
+      margin: 0 auto;
+    }
   
-
-  &__name {
-    letter-spacing: 5px;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .change-btn-wrapper {
-    display: flex;
-    justify-content: space-around;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-
-  .slide {
-    text-align: center;
-    display: none;
-  }
-  .active {
-    display: block;
-  }
-
-  .index-btn-wrapper {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 30px;
-    cursor: pointer;
-    margin-top: 15px;
-  }
-
-  .infomation {
-    font-size: 20px;
-    margin-top: 20px;
-
-    .reservation {
-      border: 2px solid black;
-      padding: 5px;
-      text-decoration: none;
-      color: black;
-      
+    .change-btn-wrapper {
+      display: flex;
+      // justify-content: space-between;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 0 150px;
+      position: relative;
+      .prev-btn {
+        position: absolute;
+        left: 150px;
+      }
+      .next-btn {
+        position: absolute;
+        right: 150px;
+      }
+      .change-btn:hover {
+        opacity: 0.4;
+      }
+    }
+  
+    .slide {
+      text-align: center;
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  
+    .index-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      letter-spacing: 30px;
+      cursor: pointer;
+      margin-top: 15px;
+      .index-btn:hover {
+        opacity: 0.4;
+      }
+    }
+  
+    .infomation {
+      font-size: 20px;
+      margin-top: 20px;
+  
+      .reservation {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px 100px;
+        text-decoration: none;
+        color: white;
+        margin: 20px 0;
+        background-color: #5dca88;
+      }
     }
   }
-
-
-  
-  
 }

@@ -1,0 +1,66 @@
+.wrapper
+  .shops-header
+    = link_to root_path, class: "shops-header__name" do
+      = icon('fas', 'swimmer')
+      宮古島
+    .shops-header__btn  
+      %ul.shops-header__btn__ul
+        %li= link_to "Diving", "#", class: "shops-header__btn__ul__li"
+        %li= link_to "Food", "#", class: "shops-header__btn__ul__li"
+        %li= link_to "Star", "#", class: "shops-header__btn__ul__li"
+  .shops_info
+    %ul.shops_info__btn.delete#a_a
+      %li.ppp
+        = link_to "大物(海亀、エイ、イルカ)", divings_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "地形ダイビング", index_b_divings_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "インスタ映え", index_c_divings_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "未経験者ok", "#", class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "値段で探す", "#", class: "shops_info__btn__a"
+    %ul.shops_info__btn.delete#b_b
+      %li.ppp
+        = link_to "宮古牛", foods_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "海鮮", index_b_foods_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "宮古そば", index_c_foods_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "レビュー評価", "#", class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "値段で探す", "#", class: "shops_info__btn__a"
+    %ul.shops_info__btn.delete#c_c
+      %li.ppp
+        = link_to "オリオン座", stars_path, class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "夏の大三角形", "#", class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "北斗七星", "#", class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "南十字星", "#", class: "shops_info__btn__a"
+      %li.ppp
+        = link_to "値段で探す", "#", class: "shops_info__btn__a"
+  .shops-main
+    %h1 宮古そば
+    .shops-main__box
+      - @foods.each do |food|
+        .shops-main__box__info
+          .shops-main__box__info__name
+            = link_to food.name, shop_path(food.id), class: "shops-main__box__info__name__link"
+          .shops-main__box__info__image
+            = image_tag("#{food.image.url}", width: "270", height: "270")
+          .shops-main__box__info__text
+            %p #{food.description}
+            %p.p ¥#{food.price}~
+    .shops-main__box
+      - @eats.each do |eat|
+        .shops-main__box__info
+          .shops-main__box__info__name
+            = link_to eat.name, shop_path(eat.id), class: "shops-main__box__info__name__link"
+          .shops-main__box__info__image
+            = image_tag("#{eat.image.url}", width: "270", height: "270")
+          .shops-main__box__info__text
+            %p #{eat.description}
+            %p.p ¥#{eat.price}~

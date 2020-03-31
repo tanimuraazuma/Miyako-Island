@@ -1,9 +1,10 @@
-@import "home";
-@import "tweets";
-@import "new";
-@import "show";
-@import "shops";
 @import "reset";
+@import "home";
+@import "tweets/index";
+@import "tweets/new";
+@import "tweets/show";
+@import "shops/index";
 @import "shops/show";
+@import "users/_resistration";
 @import "font-awesome-sprockets";
 @import "font-awesome";

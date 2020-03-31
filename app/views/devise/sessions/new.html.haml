@@ -1,0 +1,20 @@
+.resistrations
+  = link_to image_tag("/images/miyako.logo.png", width: "100", height: "100", class: "resistrations__logo"), root_path 
+  .resistration
+    %h2 ログイン
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        = f.label :Eメール, class: "label"
+        -# %br/
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "input__resistration"
+      .field
+        = f.label :パスワード, class: "label"
+        -# %br/
+        = f.password_field :password, autocomplete: "current-password", class: "input__resistration"
+      - if devise_mapping.rememberable?
+        .field
+          = f.check_box :remember_me
+          = f.label :remember_me
+      .actions
+        = f.submit "  ログイン  "
+    = render "devise/shared/links"

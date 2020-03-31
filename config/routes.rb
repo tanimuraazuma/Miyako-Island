@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  get 'stars/index'
+  get 'stars/show'
+  get 'foods/index'
   get 'divings/index'
   get 'shops/index'
   devise_for :users
@@ -11,6 +14,19 @@ Rails.application.routes.draw do
 
   resources :users, only: :show
   resources :shops, only: [:index, :show]
-  resources :divings, only: :index
+  resources :divings, only: :index do
+    collection do
+      get 'index_b'
+      get 'index_c'
+    end
+  end
 
+  resources :foods, only: :index do
+    collection do
+      get 'index_b'
+      get 'index_c'
+    end
+  end
+
+  resources :stars, only: [:index, :show]
 end

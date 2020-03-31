@@ -1,0 +1,98 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.tweet-header {
+  height: 80px;
+  width: 100%;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    font-size: 25px;
+    line-height: 80px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+  }
+  &__btn {
+    line-height: 80px;
+    margin-right: 100px;
+    list-style: none;
+    display: flex;
+    color: black;
+
+    &__name {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    &__a {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+    &__b {
+      text-decoration: none;
+    }
+  }
+}
+
+.tweets {
+  padding-top: 50px;
+
+  .tweett__show {
+    
+    width: 700px;
+    margin: 0 auto;
+    border: double 10px black;
+    text-align: center;
+
+    &__name {
+      font-size: 25px;
+      margin-bottom: 15px;
+      border: double 10px black;
+    }
+    &__text {
+      margin-bottom: 15px;
+    } 
+    .comment_area {
+      width: 100%;
+      display: block;
+      height: 75px;
+      border-top: 3px solid black;
+
+      
+
+    } 
+    .submit {
+      width: 100%;
+      padding: 10px ;
+      display: block;
+    
+      text-align: center;
+      border-top: 3px solid black;
+    }
+    .comments{
+      width: 100%;
+      border: 1px solid black;
+  
+
+      
+      .comment__box {
+        text-align: left;
+      }
+    }
+  }
+  .tweett__some__btn {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+  }
+  
+}

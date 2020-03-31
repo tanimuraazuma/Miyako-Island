@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
   before_action :move_to, except: :index
 
   def index
-    @tweets = Tweet.includes(:user)
+    @tweets = Tweet.all.order("created_at DESC")
   end
 
   def new
@@ -17,11 +17,10 @@ class TweetsController < ApplicationController
 
   def show
     @comment = Comment.new
-    @comments = @tweet.comments.includes(:user)
+    @comments = @tweet.comments.all
   end
 
   def edit
-    
   end
 
   def update
