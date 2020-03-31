@@ -22,3 +22,53 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|e-mail|string|null: false, unique: true|
+|password|string|null: false, unique: true|
+### Association
+- has_many :comments
+- has_many :tweets
+
+# shopsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|description|text|null: false|
+|address|string|null: false|
+|price|integer|null: false|
+|kind|string|null: false|
+|image|text|null: false|
+|category|integer|null: false|
+### Association
+- has_many :shop_images
+
+# shop_imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|shop_id|string|null: false, foreign_key: true|
+|image|text|null: false|
+### Association
+- belongs_to :shop
+
+# tweetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|content|text|null: false,|
+|image|text|null: false|
+### Association
+- belongs_to :user
+
+# commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|content|text|null: false,|
+|tweet_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- belongs_to :tweet
+
