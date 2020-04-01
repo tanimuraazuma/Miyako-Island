@@ -11,7 +11,7 @@
 <img width="1440" alt="スクリーンショット 2020-04-01 13 41 15" src="https://user-images.githubusercontent.com/60652767/78100226-2615ea00-741f-11ea-91c2-8e25f34c1ba4.png">
 
 検索ページ
-<img width="1440" alt="スクリーンショット 2020-04-01 13 53 14" src="https://user-images.githubusercontent.com/60652767/78100599-2ebaf000-7420-11ea-848d-ed6e0582dd95.png">
+<img width="1440" alt="スクリーンショット 2020-04-01 13 54 19" src="https://user-images.githubusercontent.com/60652767/78101001-17303700-7421-11ea-84d7-eefb0f257878.png">
 
 店舗詳細ページ
 <img width="1440" alt="スクリーンショット 2020-04-01 13 57 13" src="https://user-images.githubusercontent.com/60652767/78100838-c02a6200-7420-11ea-9ff3-f610c58a0bc3.png">
