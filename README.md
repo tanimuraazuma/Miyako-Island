@@ -1,4 +1,16 @@
 # README
+# 名前
+  Miyako Iland
+
+# 概要
+  Miyako Ilandは沖縄県宮古島の観光スポット、ツアー会社、飲食店などを検索出来るWebサービスです。
+  観光後の記事や写真の投稿も出来ます。
+
+# DEMO
+![Uploading スクリーンショット 2020-04-01 13.41.15.png…]()
+
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -22,6 +34,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
 
 # usersテーブル
 |Column|Type|Options|
