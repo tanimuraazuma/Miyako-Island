@@ -23,33 +23,21 @@
 写真投稿ページ
 <img width="1440" alt="スクリーンショット 2020-04-01 13 53 14" src="https://user-images.githubusercontent.com/60652767/78100599-2ebaf000-7420-11ea-848d-ed6e0582dd95.png">
 
+# 開発環境
+  * Haml
+  * SCSS
+  * Ruby
+  * Ruby on Rails
+  * JavaScript
+  * jQuery
+  * gem devise
+  * gem carrierwave
 
+# 課題　今後の実装予定機能
+  * コメント機能
+  * いいね機能
+  * 店舗の写真をデフォルトの状態でデータベースに保存　
 
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
 # usersテーブル

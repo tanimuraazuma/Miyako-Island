@@ -7,7 +7,6 @@
       %li= link_to "店舗一覧", shops_path, class: "tweet-header__btn__shops"
       %li= link_to "新規投稿", new_tweet_path, class: "tweet-header__btn__a" 
       %li= link_to current_user.name, user_path(current_user.id), class: "tweet-header__btn__name"
-      -# %li= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "tweet-header__btn__b" 
   - else
     %ul.contents__header__btn
       %li= link_to "新規登録", new_user_registration_path, class: "contents__header__btn__a" 

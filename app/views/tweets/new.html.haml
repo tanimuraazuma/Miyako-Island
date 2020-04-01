@@ -5,7 +5,7 @@
   %ul.tweet-header__btn
     %li= link_to "新規投稿", new_tweet_path, class: "tweet-header__btn__a" 
     %li= link_to "投稿一覧", tweets_path, class: "tweet-header__btn__a"
-    -# %li= link_to "ログアウト", destroy_user_session_path,　method: :delete, class: "tweet-header__btn__b" 
+    
 .tweets
   .tweets__head
     %h1 新規投稿
@@ -17,7 +17,4 @@
           = icon("fas", "image")
           = f.file_field :image, class: "tweet__image"
         %button.submit{type: "submit"} 送信
-    -# = f.label :image, class: "input-image" do
-    -#   = icon("fas", "image")
-    -#   = f.file_field :image, class: "input-box-image-file"
     
