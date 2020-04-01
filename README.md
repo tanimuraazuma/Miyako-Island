@@ -7,9 +7,23 @@
   観光後の記事や写真の投稿も出来ます。
 
 # DEMO
-![Uploading スクリーンショット 2020-04-01 13.41.15.png…]()
-
+トップページ
 <img width="1440" alt="スクリーンショット 2020-04-01 13 41 15" src="https://user-images.githubusercontent.com/60652767/78100226-2615ea00-741f-11ea-91c2-8e25f34c1ba4.png">
+
+検索ページ
+<img width="1440" alt="スクリーンショット 2020-04-01 13 53 14" src="https://user-images.githubusercontent.com/60652767/78100599-2ebaf000-7420-11ea-848d-ed6e0582dd95.png">
+
+店舗詳細ページ
+<img width="1440" alt="スクリーンショット 2020-04-01 13 57 13" src="https://user-images.githubusercontent.com/60652767/78100838-c02a6200-7420-11ea-9ff3-f610c58a0bc3.png">
+
+予約ページ
+<img width="1440" alt="スクリーンショット 2020-04-01 13 57 27" src="https://user-images.githubusercontent.com/60652767/78100849-c3255280-7420-11ea-8d79-ad14d6c1d023.png">
+
+
+写真投稿ページ
+<img width="1440" alt="スクリーンショット 2020-04-01 13 53 14" src="https://user-images.githubusercontent.com/60652767/78100599-2ebaf000-7420-11ea-848d-ed6e0582dd95.png">
+
+
 
 
 
