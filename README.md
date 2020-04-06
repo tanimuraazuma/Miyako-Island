@@ -14,6 +14,9 @@
 トップページ
 <img width="1440" alt="スクリーンショット 2020-04-01 13 41 15" src="https://user-images.githubusercontent.com/60652767/78100226-2615ea00-741f-11ea-91c2-8e25f34c1ba4.png">
 
+新規登録ページ
+<img width="1439" alt="スクリーンショット 2020-04-06 17 38 00" src="https://user-images.githubusercontent.com/60652767/78539412-7f21bb80-782d-11ea-834f-d0d3b4311f6e.png">
+
 検索ページ
 <img width="1440" alt="スクリーンショット 2020-04-01 13 54 19" src="https://user-images.githubusercontent.com/60652767/78101001-17303700-7421-11ea-84d7-eefb0f257878.png">
 
